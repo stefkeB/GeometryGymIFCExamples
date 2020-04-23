@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ifc:ifcXML xsi:schemaLocation="http://www.buildingsmart-tech.org/ifc/IFC4/Add2/IFC4_ADD2.xsd" xlmns="http://www.buildingsmart-tech.org/ifcXML/IFC4_ADD2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifc="http://www.buildingsmart-tech.org/ifcXML/IFC4_ADD2">
-  <IfcProjectLibrary GlobalId="2rJfFD94n4WxzHxfkPCOft" Name="ObjectLibrary">
+<ifcXML xsi:schemaLocation="http://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/XML/IFC4x1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/ifc/IFC4x1/final">
+  <IfcProjectLibrary GlobalId="2$INVRH5nFMuv23NOjvvTO" Name="ObjectLibrary">
     <RepresentationContexts>
       <IfcGeometricRepresentationContext ContextType="Model" CoordinateSpaceDimension="3" Precision="0.0001">
         <WorldCoordinateSystem xsi:type="IfcAxis2Placement3D">
@@ -8,7 +8,7 @@
         </WorldCoordinateSystem>
         <TrueNorth DirectionRatios="0 1" xsi:type="IfcDirection" />
         <HasSubContexts>
-          <IfcGeometricRepresentationSubContext ContextIdentifier="Body" ContextType="Model" TargetView="model_view" id="i27" />
+          <IfcGeometricRepresentationSubContext ContextIdentifier="Body" ContextType="Model" TargetView="model_view" />
         </HasSubContexts>
       </IfcGeometricRepresentationContext>
     </RepresentationContexts>
@@ -22,84 +22,24 @@
       </Units>
     </UnitsInContext>
     <Declares>
-      <IfcRelDeclares GlobalId="3Xfz$cwSj1b8BNdO7K32Gt">
+      <IfcRelDeclares GlobalId="2iYWkL4ST9iu1fXmD0zxjM">
         <RelatedDefinitions>
-          <IfcFootingType GlobalId="0_y1uaZJz4URHVTwpHGLhr" Name="PadFooting800x800x300">
+          <IfcFootingType GlobalId="07OoqT7755aOnWQnECFINs" Name="PadFooting800x800x300">
             <HasAssignments>
-              <IfcRelAssignsToProduct GlobalId="1BM4i7yIf7ufZafEj3LEnB" id="i93">
-                <RelatingProduct GlobalId="36UcYCIVjAfvbyIqs$Nuyh" Name="PadFootingParametric" xsi:type="IfcFootingType">
-                  <HasAssociations>
-                    <IfcRelAssociatesConstraint GlobalId="3mV1JBwqL0zeme7QhiFlHg">
-                      <RelatingConstraint Name="Length" ConstraintGrade="hard" BenchMark="equalto" xsi:type="IfcMetric">
-                        <PropertiesForConstraint>
-                          <IfcResourceConstraintRelationship>
-                            <RelatedResourceObjects>
-                              <IfcQuantityLength xsi:nil="true" href="i31" />
-                            </RelatedResourceObjects>
-                          </IfcResourceConstraintRelationship>
-                        </PropertiesForConstraint>
-                        <ReferencePath AttributeIdentifier="RepresentationMaps" ListPositions="1" xsi:type="IfcReference">
-                          <InnerReference AttributeIdentifier="MappedRepresentation" xsi:type="IfcReference">
-                            <InnerReference AttributeIdentifier="Items" ListPositions="1" xsi:type="IfcReference">
-                              <InnerReference TypeIdentifier="IfcExtrudedAreaSolid" AttributeIdentifier="SweptArea" xsi:type="IfcReference">
-                                <InnerReference TypeIdentifier="IfcRectangleProfileDef" AttributeIdentifier="XDim" xsi:type="IfcReference" />
-                              </InnerReference>
-                            </InnerReference>
-                          </InnerReference>
-                        </ReferencePath>
-                      </RelatingConstraint>
-                    </IfcRelAssociatesConstraint>
-                    <IfcRelAssociatesConstraint GlobalId="2LHC2dMljCVAr3mT4v0L88">
-                      <RelatingConstraint Name="Width" ConstraintGrade="hard" BenchMark="equalto" xsi:type="IfcMetric">
-                        <PropertiesForConstraint>
-                          <IfcResourceConstraintRelationship>
-                            <RelatedResourceObjects>
-                              <IfcQuantityLength xsi:nil="true" href="i32" />
-                            </RelatedResourceObjects>
-                          </IfcResourceConstraintRelationship>
-                        </PropertiesForConstraint>
-                        <ReferencePath AttributeIdentifier="RepresentationMaps" ListPositions="1" xsi:type="IfcReference">
-                          <InnerReference AttributeIdentifier="MappedRepresentation" xsi:type="IfcReference">
-                            <InnerReference AttributeIdentifier="Items" ListPositions="1" xsi:type="IfcReference">
-                              <InnerReference TypeIdentifier="IfcExtrudedAreaSolid" AttributeIdentifier="SweptArea" xsi:type="IfcReference">
-                                <InnerReference TypeIdentifier="IfcRectangleProfileDef" AttributeIdentifier="YDim" xsi:type="IfcReference" />
-                              </InnerReference>
-                            </InnerReference>
-                          </InnerReference>
-                        </ReferencePath>
-                      </RelatingConstraint>
-                    </IfcRelAssociatesConstraint>
-                    <IfcRelAssociatesConstraint GlobalId="3lVKM3Ldn1awJQJS8rBHZU">
-                      <RelatingConstraint Name="Height" ConstraintGrade="hard" BenchMark="equalto" xsi:type="IfcMetric">
-                        <PropertiesForConstraint>
-                          <IfcResourceConstraintRelationship>
-                            <RelatedResourceObjects>
-                              <IfcQuantityLength xsi:nil="true" href="i33" />
-                            </RelatedResourceObjects>
-                          </IfcResourceConstraintRelationship>
-                        </PropertiesForConstraint>
-                        <ReferencePath AttributeIdentifier="RepresentationMaps" ListPositions="1" xsi:type="IfcReference">
-                          <InnerReference AttributeIdentifier="MappedRepresentation" xsi:type="IfcReference">
-                            <InnerReference AttributeIdentifier="Items" ListPositions="1" xsi:type="IfcReference">
-                              <InnerReference TypeIdentifier="IfcExtrudedAreaSolid" AttributeIdentifier="Depth" xsi:type="IfcReference" />
-                            </InnerReference>
-                          </InnerReference>
-                        </ReferencePath>
-                      </RelatingConstraint>
-                    </IfcRelAssociatesConstraint>
-                  </HasAssociations>
+              <IfcRelAssignsToProduct GlobalId="33QqvIqcnBOutqET9FuqRR">
+                <RelatingProduct GlobalId="0KP17t1en9xgA5htZRmnRS" Name="PadFootingParametric" xsi:type="IfcFootingType">
                   <HasPropertySets>
-                    <IfcElementQuantity GlobalId="0DHW$Ph$vDpetcz$zACkLP" Name="Qto_FootingBaseQuantities">
+                    <IfcElementQuantity GlobalId="1X_C7C2OD4Gw9rVMLUzJCl" Name="Qto_FootingBaseQuantities">
                       <Quantities>
-                        <IfcQuantityLength Name="Length" LengthValue="800" id="i31" />
-                        <IfcQuantityLength Name="Width" LengthValue="800" id="i32" />
-                        <IfcQuantityLength Name="Height" LengthValue="300" id="i33" />
+                        <IfcQuantityLength Name="Length" LengthValue="800" />
+                        <IfcQuantityLength Name="Width" LengthValue="800" />
+                        <IfcQuantityLength Name="Height" LengthValue="300" />
                       </Quantities>
                     </IfcElementQuantity>
                   </HasPropertySets>
                   <RepresentationMaps>
                     <IfcRepresentationMap>
-                      <MappingOrigin xsi:type="IfcAxis2Placement3D" id="i5">
+                      <MappingOrigin xsi:type="IfcAxis2Placement3D">
                         <Location Coordinates="0 0 0" xsi:type="IfcCartesianPoint" />
                       </MappingOrigin>
                       <MappedRepresentation RepresentationIdentifier="Body" RepresentationType="SweptSolid" xsi:type="IfcShapeRepresentation">
@@ -110,7 +50,7 @@
                             <Position xsi:type="IfcAxis2Placement3D">
                               <Location Coordinates="0 0 0" xsi:type="IfcCartesianPoint" />
                             </Position>
-                            <ExtrudedDirection DirectionRatios="0 0 -1" xsi:type="IfcDirection" id="i21" />
+                            <ExtrudedDirection DirectionRatios="0 0 -1" xsi:type="IfcDirection" />
                           </IfcExtrudedAreaSolid>
                         </Items>
                       </MappedRepresentation>
@@ -120,7 +60,7 @@
               </IfcRelAssignsToProduct>
             </HasAssignments>
             <HasPropertySets>
-              <IfcElementQuantity GlobalId="2uakNmumX5AhDOfsNtQOOO" Name="Qto_FootingBaseQuantities">
+              <IfcElementQuantity GlobalId="3qrEBxvU16IQgOTaL1PEF_" Name="Qto_FootingBaseQuantities">
                 <Quantities>
                   <IfcQuantityLength Name="Length" LengthValue="800" />
                   <IfcQuantityLength Name="Width" LengthValue="800" />
@@ -146,12 +86,12 @@
               </IfcRepresentationMap>
             </RepresentationMaps>
           </IfcFootingType>
-          <IfcFootingType GlobalId="0CK1RLIdb6quycorOcjqCd" Name="PadFooting600x600x250">
+          <IfcFootingType GlobalId="0i3T10sK10buj1hRqAec4O" Name="PadFooting600x600x250">
             <HasAssignments>
               <IfcRelAssignsToProduct xsi:nil="true" href="i93" />
             </HasAssignments>
             <HasPropertySets>
-              <IfcElementQuantity GlobalId="2oRdO829r8b915aUgG6o9c" Name="Qto_FootingBaseQuantities">
+              <IfcElementQuantity GlobalId="0bArxfCNTCFh1dj42F$L3c" Name="Qto_FootingBaseQuantities">
                 <Quantities>
                   <IfcQuantityLength Name="Length" LengthValue="600" />
                   <IfcQuantityLength Name="Width" LengthValue="600" />
@@ -177,12 +117,12 @@
               </IfcRepresentationMap>
             </RepresentationMaps>
           </IfcFootingType>
-          <IfcFootingType GlobalId="1dEyJ_GMvCJwzh3BfO0z0V" Name="PadFooting400x400x200">
+          <IfcFootingType GlobalId="1Rz8z9RRf5FwXIEnxaczYb" Name="PadFooting400x400x200">
             <HasAssignments>
               <IfcRelAssignsToProduct xsi:nil="true" href="i93" />
             </HasAssignments>
             <HasPropertySets>
-              <IfcElementQuantity GlobalId="1DRMMco_PAEOpxY4DipsX9" Name="Qto_FootingBaseQuantities">
+              <IfcElementQuantity GlobalId="3eR59O1xj2dO0uD4j8QxM6" Name="Qto_FootingBaseQuantities">
                 <Quantities>
                   <IfcQuantityLength Name="Length" LengthValue="400" />
                   <IfcQuantityLength Name="Width" LengthValue="400" />
@@ -212,4 +152,111 @@
       </IfcRelDeclares>
     </Declares>
   </IfcProjectLibrary>
-</ifc:ifcXML>
+  <IfcRelDefinesByType GlobalId="0C81IPV3X6NvdI19uyfS4E" Name="NameNotAssigned">
+    <RelatingType xsi:nil="true" href="i16" />
+  </IfcRelDefinesByType>
+  <IfcRelAssociatesConstraint GlobalId="3h1goVktDEK94lMyKobADk">
+    <RelatedObjects>
+      <IfcFootingType xsi:nil="true" href="i16" />
+    </RelatedObjects>
+    <RelatingConstraint Name="Length" ConstraintGrade="hard" BenchMark="equalto" xsi:type="IfcMetric">
+      <PropertiesForConstraint>
+        <IfcResourceConstraintRelationship id="i40">
+          <RelatedResourceObjects>
+            <IfcQuantityLength xsi:nil="true" href="i31" />
+          </RelatedResourceObjects>
+        </IfcResourceConstraintRelationship>
+      </PropertiesForConstraint>
+      <ReferencePath AttributeIdentifier="RepresentationMaps" ListPositions="1" xsi:type="IfcReference">
+        <InnerReference AttributeIdentifier="MappedRepresentation" xsi:type="IfcReference">
+          <InnerReference AttributeIdentifier="Items" ListPositions="1" xsi:type="IfcReference">
+            <InnerReference TypeIdentifier="IfcExtrudedAreaSolid" AttributeIdentifier="SweptArea" xsi:type="IfcReference">
+              <InnerReference TypeIdentifier="IfcRectangleProfileDef" AttributeIdentifier="XDim" xsi:type="IfcReference" />
+            </InnerReference>
+          </InnerReference>
+        </InnerReference>
+      </ReferencePath>
+    </RelatingConstraint>
+  </IfcRelAssociatesConstraint>
+  <IfcRelAssociatesConstraint GlobalId="0pky6_9kTAQQb_C61EPJYs">
+    <RelatedObjects>
+      <IfcFootingType xsi:nil="true" href="i16" />
+    </RelatedObjects>
+    <RelatingConstraint Name="Width" ConstraintGrade="hard" BenchMark="equalto" xsi:type="IfcMetric">
+      <PropertiesForConstraint>
+        <IfcResourceConstraintRelationship id="i48">
+          <RelatedResourceObjects>
+            <IfcQuantityLength xsi:nil="true" href="i32" />
+          </RelatedResourceObjects>
+        </IfcResourceConstraintRelationship>
+      </PropertiesForConstraint>
+      <ReferencePath AttributeIdentifier="RepresentationMaps" ListPositions="1" xsi:type="IfcReference">
+        <InnerReference AttributeIdentifier="MappedRepresentation" xsi:type="IfcReference">
+          <InnerReference AttributeIdentifier="Items" ListPositions="1" xsi:type="IfcReference">
+            <InnerReference TypeIdentifier="IfcExtrudedAreaSolid" AttributeIdentifier="SweptArea" xsi:type="IfcReference">
+              <InnerReference TypeIdentifier="IfcRectangleProfileDef" AttributeIdentifier="YDim" xsi:type="IfcReference" />
+            </InnerReference>
+          </InnerReference>
+        </InnerReference>
+      </ReferencePath>
+    </RelatingConstraint>
+  </IfcRelAssociatesConstraint>
+  <IfcRelAssociatesConstraint GlobalId="2iCtMLljvFAwfzkQcRySDH">
+    <RelatedObjects>
+      <IfcFootingType xsi:nil="true" href="i16" />
+    </RelatedObjects>
+    <RelatingConstraint Name="Height" ConstraintGrade="hard" BenchMark="equalto" xsi:type="IfcMetric">
+      <PropertiesForConstraint>
+        <IfcResourceConstraintRelationship id="i55">
+          <RelatedResourceObjects>
+            <IfcQuantityLength xsi:nil="true" href="i33" />
+          </RelatedResourceObjects>
+        </IfcResourceConstraintRelationship>
+      </PropertiesForConstraint>
+      <ReferencePath AttributeIdentifier="RepresentationMaps" ListPositions="1" xsi:type="IfcReference">
+        <InnerReference AttributeIdentifier="MappedRepresentation" xsi:type="IfcReference">
+          <InnerReference AttributeIdentifier="Items" ListPositions="1" xsi:type="IfcReference">
+            <InnerReference TypeIdentifier="IfcExtrudedAreaSolid" AttributeIdentifier="Depth" xsi:type="IfcReference" />
+          </InnerReference>
+        </InnerReference>
+      </ReferencePath>
+    </RelatingConstraint>
+  </IfcRelAssociatesConstraint>
+  <IfcRelDefinesByType GlobalId="3OklW4d6j5I9vKwyfq6Ruw" Name="NameNotAssigned">
+    <RelatingType xsi:nil="true" href="i57" />
+  </IfcRelDefinesByType>
+  <IfcRelDefinesByType GlobalId="1H71mUmzbA3usplKnNBsCE" Name="NameNotAssigned">
+    <RelatingType xsi:nil="true" href="i69" />
+  </IfcRelDefinesByType>
+  <IfcRelDefinesByType GlobalId="2u4IYynkz379ln490GRgFg" Name="NameNotAssigned">
+    <RelatingType xsi:nil="true" href="i81" />
+  </IfcRelDefinesByType>
+  <IfcDirection DirectionRatios="1 0 0" />
+  <IfcDirection DirectionRatios="0 1 0" />
+  <IfcDirection DirectionRatios="0 0 1" />
+  <IfcCartesianPoint Coordinates="0 0" />
+  <IfcAxis2Placement2D>
+    <Location xsi:nil="true" href="i6" />
+  </IfcAxis2Placement2D>
+  <IfcSIUnit UnitType="lengthunit" Name="metre" />
+  <IfcMetric xsi:nil="true" href="i34" />
+  <IfcReference xsi:nil="true" href="i35" />
+  <IfcReference xsi:nil="true" href="i36" />
+  <IfcReference xsi:nil="true" href="i37" />
+  <IfcReference xsi:nil="true" href="i38" />
+  <IfcReference xsi:nil="true" href="i39" />
+  <IfcResourceConstraintRelationship xsi:nil="true" href="i40" />
+  <IfcMetric xsi:nil="true" href="i42" />
+  <IfcReference xsi:nil="true" href="i43" />
+  <IfcReference xsi:nil="true" href="i44" />
+  <IfcReference xsi:nil="true" href="i45" />
+  <IfcReference xsi:nil="true" href="i46" />
+  <IfcReference xsi:nil="true" href="i47" />
+  <IfcResourceConstraintRelationship xsi:nil="true" href="i48" />
+  <IfcMetric xsi:nil="true" href="i50" />
+  <IfcReference xsi:nil="true" href="i51" />
+  <IfcReference xsi:nil="true" href="i52" />
+  <IfcReference xsi:nil="true" href="i53" />
+  <IfcReference xsi:nil="true" href="i54" />
+  <IfcResourceConstraintRelationship xsi:nil="true" href="i55" />
+</ifcXML>

@@ -11,7 +11,7 @@ namespace testConsole
 	{
 		static void Main(string[] args)
 		{
-			DatabaseIfc db = new DatabaseIfc(Console.In);
+			DatabaseIfc db = new DatabaseIfc(args[0]);
 			IfcProject project = db.Project;
 			IfcSpatialElement rootElement = project.RootElement();
 			List<IfcBuildingElement> elements = project.Extract<IfcBuildingElement>();
